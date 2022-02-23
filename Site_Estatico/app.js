@@ -14,6 +14,7 @@ const closeBtn = document.querySelector('.close-btn');
 
 
 // Click events
+
 openBtn.addEventListener('click', () => {
     modal.style.display = 'block';
 });
@@ -65,10 +66,27 @@ function checkRequired(inputArr) {
     });
 }
 
-// Get fieldName
+// Check passwords match
+function passwordMatch(input1, input2) {
+    if(input1.value !== input2.value) {
+        showError(input2, 'Passwords do not match');
+    }
+}
 
+// Get fieldName
 function getFieldName(input) {
     return input.name.charAt(0).toUpperCase() + input.name.slice(1);
+}
+
+// Check input length
+function checkLength(input, min, max) {
+    if(input.value.length < min) {
+        showError(input, `${getFieldName(input)} must be at least ${min} characters`);
+    } else if(input.value.length > max) {
+        showError(input, `${getFieldName(input)} must be less than ${max} characters`);
+    } else {
+        showValid(input);
+    }
 }
 
 // Event Listeners
@@ -76,4 +94,8 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     checkRequired([name, email, password, passwordConfirm]);
+    checkLength(name, 3, 30);
+    checkLength(password, 8, 25);
+    checkLength(passwordConfirm, 8, 25);
+    passwordMatch(password, passwordConfirm);
 });
