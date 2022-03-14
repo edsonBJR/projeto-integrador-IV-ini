@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WICHSTREAM - SOBRE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <img src="images/wich1.png" id="nav_log" />
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span><span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links"> Home </a>
+          </li>
+          <li class="navbar__item">
+            <a href="streams.html" class="navbar__links"> Streams </a>
+          </li>
+          <li class="navbar__item">
+            <a href="about.html" class="navbar__links"> Sobre </a>
+          </li>
+          <li class="navbar__btn">
+            <a href="form.html" class="button"> Cadastre-se </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>WICHSTREAM</h1>
+          <p>Com a grande gama de conteúdo disponíveis em diferentes ferramentas, muitas vezes fica difícil
+            acompanhar onde encontrar cada filme, série ou documentário. O aplicativo busca facilitar e 
+            organizar melhor, realizando uma busca por diversos serviços de streams disponíveis no nosso país.
+            Buscando acompanhar a atualização de todos os serviços, o WichStream permite ainda o compartilhamento
+            e uma grande interatividade de conteúdo para todos os usuários</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <p>Somos um grupo de estudantes da Universidade Newton Paiva, com o objetivo de desenvolver
+                o nosso projeto integrador (que é este aplicativo). Nele será possível reunir todas as
+                plataformas de filmes, séries e documentários em um só lugar.
+            </p>
+        </div>
+            <div class="main__img--container">
+                <img src="images/tela.png" alt="pic" id="tela__img" />
+          </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+      </div>
+  
+      <!-- Footer Section -->
+      <div class="footer__container">
+        <div class="social__media">
+          <div class="social__media--wrap">
+            <div id="footer__logo">
+              <i class="fa-solid fa-circle-notch"></i>WICHSTREAM
+            </div>
+            <p class="website__rights">
+              © WICHSTREAM 2022. All rights reserved
+            </p>
+            <div class="social__icons">
+              <a href="/" class="social__icon--link" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="/" class="social__icon--link" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="/" class="social__icon--link" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="/" class="social__icon--link" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="/" class="social__icon--link" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal -->
+  
+      <div class="modal" id="email-modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-content-left">
+            <img id="modal-img" src="images/pic5.svg" alt="">
+          </div>
+          <div class="modal-content-right">
+            <form action="/" method="GET" class="modal-form" id="form">
+              <!-- <h1>Get started with us today! Create your account by filling out the information below.</h1> -->
+              <h1>Venha fazer parte! Crie sua conta preenchendo o formulário abaixo e gerencie suas Stream's</h1>
+              <div class="form-validation">
+                <input type="text" class="modal-input" id="nome" name="nome" placeholder="Digite seu nome">
+                <p>Error Message</p>
+              </div>
+              <div class="form-validation">
+                <input type="email" class="modal-input" id="email" name="email" placeholder="Digite seu email">
+                <p>Error Message</p>
+              </div>
+              <div class="form-validation">
+                <input type="password" class="modal-input" id="senha" name="senha" placeholder="Digite sua senha">
+                <p>Error Message</p>
+              </div>
+              <div class="form-validation">
+                <input type="password" class="modal-input" id="senha-confirm" name="senha" placeholder="Confirme sua senha">
+                <p>Error Message</p>
+              </div>
+              <input type="submit" class="modal-input-btn" value="Sign Up">
+              <!-- <span class="modal-input-login">Already have an account? Login <a href="#">here</a></span> -->
+              <span class="modal-input-login">Já possui uma conta? Entre <a href="#">aqui</a></span>
+            </form>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+  
+      <script src="app.js"></script>
+      <script
+        src="https://kit.fontawesome.com/34ed5088e4.js"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>
+  
